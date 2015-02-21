@@ -1,0 +1,31 @@
+@import "./variables.less";
+
+[notify] {
+
+  &[horizontal='right'] {
+
+    left: 100%;
+    margin-left: (@notify-width + @notify-margin-horizontal) * -1px;
+
+  }
+
+  &[horizontal='left'] {
+
+    margin-left: @notify-margin-horizontal * 1px;
+
+  }
+
+  &[horizontal='center'] {
+
+    left: 50%;
+    margin-left: -(@notify-width / 2) * 1px;
+
+  }
+
+  &[vertical='top'] {
+
+    margin-top: @notify-margin-vertical * 1px;
+
+  }
+
+}

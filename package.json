@@ -1,0 +1,38 @@
+{
+  "name": "atom-development-server",
+  "main": "./lib/development-server.coffee",
+  "version": "0.3.5",
+  "description": "a development server for atom",
+  "keywords": [
+    "livereload",
+    "http",
+    "terminal",
+    "term",
+    "html",
+    "preview",
+    "shortcuts"
+  ],
+  "activationEvents": [
+    "development-server:toggle"
+  ],
+  "repository": "https://github.com/joaoafrmartins/atom-development-server",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "chai": "",
+    "livereload": "",
+    "lodash.debounce": "",
+    "lodash.merge": "",
+    "mocha": "",
+    "pty.js": "https://github.com/chjj/pty.js/archive/master.tar.gz",
+    "shelljs": "",
+    "sinon": "",
+    "term.js": "",
+    "theorist": ""
+  },
+  "bundleDependencies": [
+    "pty.js"
+  ]
+}

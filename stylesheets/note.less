@@ -1,0 +1,159 @@
+@import "./variables.less";
+@import "./position.less";
+@import "./notes.less";
+@import "./note.less";
+
+.border-radius (@radius: 5px) {
+
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+
+}
+
+[note] {
+
+  .border-radius;
+
+  min-height: 100px;
+  min-width: 100%;
+  height: 100%;
+  z-index: 99999;
+  margin-bottom: .5em;
+
+  [title] {
+
+    .border-radius;
+
+    font-weight: 900;
+    border: none;
+    width: 100%;
+    padding: .5em 0 0 .5em;
+    font-size: 14px;
+    margin-bottom: 0px;
+		text-transform: uppercase;
+
+		[icon] {
+
+			float: left;
+			margin-left: .5em;
+			padding: 0 .3em 0 .3em;
+
+    }
+
+    [close] {
+
+      float: right;
+      padding: 0 .3em 0 .3em;
+			margin-right: .5em;
+			font-style: normal;
+			&::after {
+        content: '✖';
+        opacity: .5;
+      }
+
+    }
+
+  }
+
+  [envelope] {
+    vertical-align: middle;
+    padding: .5em .5em .5em .5em;
+    height: 100%;
+    width: 100%;
+
+		[message] {
+			font-weight: 900;
+			text-align: center;
+			font-style: italic;
+			width: 100%;
+			height: 100%;
+		}
+  }
+
+
+  &[level='error'] {
+
+		background-color: @notify-error;
+
+		& * {
+			color: lighten(@notify-error, 50%);
+		}
+
+		[title] {
+      [icon] {
+		    /*&::after {
+          content: '×';
+        }*/
+      }
+    }
+  }
+
+	&[level] {
+
+		[title] {
+
+			[icon] {
+				font-style: normal;
+			}
+
+		}
+
+	}
+
+  &[level='warning'] {
+
+		background-color: @notify-warning;
+
+		& * {
+			color: lighten(@notify-warning, 50%);
+		}
+
+    [title] {
+      [icon] {
+				/*&::after {
+          content: '⚠';
+        }*/
+      }
+    }
+  }
+
+  &[level='info'] {
+
+		background-color: @notify-info;
+
+		& * {
+			color: lighten(@notify-info, 50%);
+		}
+
+		[title] {
+			[icon] {
+		    /*&::after {
+          content: '!';
+        }*/
+      }
+    }
+  }
+
+  &[level='success'] {
+
+		background-color: @notify-success;
+
+		& * {
+			color: lighten(@notify-success, 50%);
+		}
+
+    [title] {
+      [icon] {
+		    /*&::after {
+          content: '✓';
+        }*/
+      }
+    }
+  }
+
+}

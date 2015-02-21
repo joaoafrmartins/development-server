@@ -1,0 +1,19 @@
+@import "./variables.less";
+
+[notify] {
+
+  min-height: 100px;
+  width: @notify-width * 1px;
+  display: block !important;
+  position: absolute !important;
+
+  [notes] {
+
+    width: 100%;
+    max-width: @notify-width * 1px;
+    position: absolute;
+    z-index: @notify-z-index;
+
+  }
+
+}

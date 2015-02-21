@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable development-server': 'development-server:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Development Server'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'development-server:toggle' }
+      ]
+    ]
+  }
+]
