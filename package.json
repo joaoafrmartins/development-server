@@ -15,7 +15,6 @@
   "activationEvents": [
     "development-server:toggle"
   ],
-  "repository": "https://github.com/joaoafrmartins/atom-development-server",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
@@ -34,5 +33,13 @@
   },
   "bundleDependencies": [
     "pty.js"
-  ]
+  ],
+  "homepage": "https://github.com/joaoafrmartins/development-server",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joaoafrmartins/development-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joaoafrmartins/development-server/issues"
+  }
 }
