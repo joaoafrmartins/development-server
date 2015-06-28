@@ -1,7 +1,7 @@
 {
   "name": "development-server",
   "main": "./lib/development-server.coffee",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "a development server for atom",
   "keywords": [
     "livereload",
