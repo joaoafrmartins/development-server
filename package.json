@@ -1,5 +1,5 @@
 {
-  "name": "development-server",
+  "name": "atom-development-server",
   "main": "./lib/development-server.coffee",
   "version": "0.4.1",
   "description": "a development server for atom",
